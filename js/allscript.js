@@ -4,10 +4,9 @@
 		minusInstaFeed : function(options, callback){
 			
 			var defaults = {
-				userID: 515483853,
+				userID: 0,
 				accessToken: '343577867.39b4e50.4448c0bb9f1e48889eac72a447005a93',
-				loadingClass: 'loading',
-				maxCount: null,
+				loadingClass: 'loading'
 			};
 			
 			var options = $.extend(defaults, options);
@@ -43,6 +42,8 @@
 					var theme = '<div class="list"><ul>',
 						template = '<li><div class="column id">{{id}}</div><div class="column thumb"><a href="{{link}}" target="_blank"><img src="{{thumb}}" border="0" /></a></div></li>';
 					
+					el.before( '<div class="instaTitle"><a href="https://instagram.com/'+obj[0]['user']['username']+'"><img src="'+obj[0]['user']['profile_picture']+'" alt="'+obj[0]['user']['full_name']+'" title="'+obj[0]['user']['full_name']+'" /><h1>'+obj[0]['user']['full_name']+' Instagram Feeds</h1><hr class="fixer" /></a></div>' );
+					
 					for( var i = 0; i < obj.length; ++i ){
 						var o = obj[ i ], id = o['caption']['id'], lnk = o['link'], thumb = o['images']['thumbnail']['url'], text = o['caption']['text']; console.log(o);
 						theme += template.replace(/{{id}}/g, id).replace(/{{link}}/g, lnk).replace(/{{thumb}}/g, thumb).replace(/{{text}}/g, text);
@@ -53,8 +54,7 @@
 										
 					if( callback != undefined ) callback();
  				}
-				
-				
+
 				
 			});
 		}

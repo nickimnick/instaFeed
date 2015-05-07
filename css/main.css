@@ -1,0 +1,32 @@
+/* Css Reset */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:0;border:0;margin:0;padding:0;}
+input,select{vertical-align:middle}
+ol,ul,li{list-style:none;}
+
+.fixer{display:block; width:100%; height:0 !important; font-size:0  !important; visibility:hidden; clear:both; float:none !important;}
+.none{display:none;}
+.hidden{visibilty:hidden;}
+
+body, html{background:#ddd;}
+*{box-sizing:border-box;}
+#pageBody{padding:30px 0; width:1105px; margin:0 auto;}
+.instaTitle{background:#457499; width:1080px; margin:0 0 20px 10px; padding:15px;}
+.instaTitle a{display:block; line-height:75px;}
+.instaTitle img{float:left; margin-right:20px; width:75px;}
+.instaTitle h1{font-size:24px; color:#fff; float:left;}
+.list li{float:left; margin:0 10px 20px 10px; width:200px; padding:35px 25px; background:#fff;}
+.list li .column.id:before{content:"Post ID"; font-weight:bold; margin-bottom:5px; color:#457499; display:block;}
+.list li .column.id{margin-bottom:15px;}
+.list li .column.thumb:before{content:"Post Thumb"; font-weight:bold; margin-bottom:5px; color:#457499; display:block;}
